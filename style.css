@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.topo{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.topo h1{
+    font-size: 28px;
+    line-height: 1.2;
+}
+.icone{
+    width: 80px;
+}
+.conteudo{
+    background-color: #c0c0c0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagem-box{
+    display: flex;
+    gap: 20px;
+}
+.imagem-box img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+.terra-box{
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   width: 100%;
+   margin-top: 20px;
+}
+.terra-box img {
+    width: 200px;
+}
+.rodape{
+    background-color: #444;
+    height: 100px;
+}
+ 
