@@ -12,28 +12,47 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #2a9d8f;
+            background: linear-gradient(to bottom, rgba(0, 38, 28, 0.8), rgba(0, 70, 50, 0.8)), url('https://www.example.com/imagem-de-fundo.jpg') no-repeat center center;
+            background-size: cover;
             color: white;
             text-align: center;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 80px 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 10px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #264653;
-            padding: 10px 0;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
+            padding: 12px 30px;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
             background-color: #e9c46a;
+            color: #264653;
         }
         .container {
             padding: 20px;
@@ -75,7 +94,8 @@
 
     <header>
         <h1>Tecnologia no Campo</h1>
-        <p>Transformando a agricultura com inovação e sustentabilidade</p>
+        <p>Transformando a agricultura com inovação, eficiência e sustentabilidade.</p>
+        <p>Conectando o campo com o futuro através da tecnologia.</p>
     </header>
 
     <nav>
