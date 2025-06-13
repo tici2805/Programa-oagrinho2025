@@ -28,13 +28,16 @@
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         nav {
@@ -60,18 +63,29 @@
             color: white;
             padding: 100px 20px;
             text-align: center;
+            position: relative;
         }
 
         .hero h2 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: 300;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
         }
 
         .main-content {
@@ -87,12 +101,15 @@
             font-size: 2.5em;
             color: #4c9a2a;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .section p {
             font-size: 1.1em;
             color: #555;
             line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .cards-container {
@@ -116,6 +133,7 @@
             width: 100%;
             height: auto;
             border-radius: 8px;
+            transition: transform 0.3s ease;
         }
 
         .card h3 {
@@ -131,6 +149,24 @@
 
         .card:hover {
             transform: translateY(-10px);
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .cta-button {
+            background-color: #4c9a2a;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #3c7d1c;
         }
 
         footer {
@@ -151,7 +187,7 @@
 
     <header>
         <h1>Tecnologia no Campo</h1>
-        <p>Transformando o agronegócio com inovação e sustentabilidade</p>
+        <p>Transformando o agronegócio com inovação, sustentabilidade e eficiência.</p>
     </header>
 
     <nav>
@@ -162,14 +198,14 @@
     </nav>
 
     <div class="hero">
-        <h2>Inovação a Serviço do Agronegócio</h2>
-        <p>A tecnologia está mudando a maneira como produzimos, cultivamos e gerenciamos a produção agrícola. Vamos explorar as soluções do futuro!</p>
+        <h2>Inovação e Sustentabilidade no Agronegócio</h2>
+        <p>A tecnologia está moldando o futuro da agricultura, desde a otimização de processos até a promoção de práticas mais verdes e sustentáveis.</p>
     </div>
 
     <div class="main-content">
         <div class="section">
-            <h2>Como a Tecnologia Pode Transformar o Campo?</h2>
-            <p>A tecnologia tem revolucionado o agronegócio, melhorando a produtividade, a sustentabilidade e a gestão de recursos. Desde drones para monitoramento de culturas até softwares para previsão climática, a inovação está ajudando os agricultores a tomarem decisões mais assertivas e eficientes.</p>
+            <h2>Impacto das Tecnologias no Campo</h2>
+            <p>As inovações tecnológicas estão cada vez mais presentes no campo, proporcionando uma agricultura de precisão que aumenta a produtividade, reduz desperdícios e contribui para a sustentabilidade. Drones, sensores IoT, e sistemas inteligentes são apenas algumas das ferramentas que estão transformando a produção rural.</p>
         </div>
 
         <div class="section">
@@ -177,20 +213,28 @@
             <div class="cards-container">
                 <div class="card">
                     <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Monitoramento+de+Campos" alt="Monitoramento de Campos">
-                    <h3>Monitoramento de Campos</h3>
-                    <p>Drones e sensores de campo para coletar dados em tempo real, proporcionando um controle mais preciso das culturas e condições do solo.</p>
+                    <h3>Monitoramento Inteligente de Campos</h3>
+                    <p>Drones e sensores IoT permitem o monitoramento remoto em tempo real, coletando dados precisos sobre o clima, solo e saúde das plantas.</p>
+                    <a href="#" class="cta-button">Saiba Mais</a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Previs%C3%A3o+Clim%C3%A1tica" alt="Previsão Climática">
-                    <h3>Previsão Climática</h3>
-                    <p>Ferramentas de previsão climática ajudam os produtores a planejar melhor as colheitas e a se preparar para condições adversas.</p>
+                    <h3>Previsão Climática Avançada</h3>
+                    <p>Sistemas de previsão climática ajudam os agricultores a planejar suas atividades de forma mais eficiente, minimizando os impactos de fenômenos climáticos adversos.</p>
+                    <a href="#" class="cta-button">Saiba Mais</a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Agricultura+de+Precis%C3%A3o" alt="Agricultura de Precisão">
                     <h3>Agricultura de Precisão</h3>
-                    <p>Uso de tecnologias para monitoramento detalhado de cada hectare, garantindo o uso eficiente de insumos e aumentando a produção sustentável.</p>
+                    <p>Tecnologias como GPS e sensores de solo possibilitam um uso mais eficiente de insumos, como fertilizantes e pesticidas, resultando em menores custos e menor impacto ambiental.</p>
+                    <a href="#" class="cta-button">Saiba Mais</a>
                 </div>
             </div>
+        </div>
+
+        <div class="section">
+            <h2>Transformando a Agricultura para um Futuro Sustentável</h2>
+            <p>A adoção de tecnologias no campo vai além da melhoria da produção. Ela também contribui para um ambiente mais saudável e uma maior eficiência no uso de recursos naturais, como água e energia. O futuro da agricultura está nas mãos da tecnologia.</p>
         </div>
     </div>
 
