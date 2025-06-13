@@ -7,8 +7,8 @@
 /* Estilo geral do corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: hsl(208, 81%, 45%);
+    color: hsl(127, 85%, 46%);
     line-height: 1.6;
 }
 
