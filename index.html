@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT - Página Colorida</title>
+    <title>Tecnologia no Campo</title>
     <style>
         /* Resetando alguns estilos padrão */
         * {
@@ -14,117 +14,188 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #4f8a8b;
+            background-color: #4c9a2a; /* Verde do campo */
             color: white;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
+            border-bottom: 5px solid #3c7d1c;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
         }
 
         nav {
-            background-color: #333;
-            padding: 10px;
+            background-color: #2c6b1f; /* Verde escuro */
+            padding: 15px;
             text-align: center;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        .main-content {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card {
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            width: 60%;
-            max-width: 1000px;
-            margin: 20px;
-            padding: 20px;
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x800/4c9a2a/ffffff?text=Tecnologia+no+Campo');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
             text-align: center;
         }
 
-        .card h2 {
-            color: #4f8a8b;
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: #4c9a2a;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.8em;
+            color: #4c9a2a;
         }
 
         .card p {
-            color: #666;
             font-size: 1.1em;
+            color: #666;
         }
 
-        .cta-button {
-            background-color: #4f8a8b;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        .cta-button:hover {
-            background-color: #3a6766;
+        .card:hover {
+            transform: translateY(-10px);
         }
 
         footer {
-            background-color: #333;
+            background-color: #2c6b1f;
             color: white;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
         }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo ao ChatGPT</h1>
+        <h1>Tecnologia no Campo</h1>
+        <p>Transformando o agronegócio com inovação e sustentabilidade</p>
     </header>
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Preços</a>
+        <a href="#">Soluções</a>
+        <a href="#">Projetos</a>
         <a href="#">Contato</a>
     </nav>
 
+    <div class="hero">
+        <h2>Inovação a Serviço do Agronegócio</h2>
+        <p>A tecnologia está mudando a maneira como produzimos, cultivamos e gerenciamos a produção agrícola. Vamos explorar as soluções do futuro!</p>
+    </div>
+
     <div class="main-content">
-        <div class="card">
-            <h2>Descubra o Poder do ChatGPT</h2>
-            <p>O ChatGPT é um modelo de linguagem avançado desenvolvido pela OpenAI. Ele pode ajudar em diversas tarefas, desde redação até análise de dados.</p>
-            <a href="#" class="cta-button">Saiba Mais</a>
+        <div class="section">
+            <h2>Como a Tecnologia Pode Transformar o Campo?</h2>
+            <p>A tecnologia tem revolucionado o agronegócio, melhorando a produtividade, a sustentabilidade e a gestão de recursos. Desde drones para monitoramento de culturas até softwares para previsão climática, a inovação está ajudando os agricultores a tomarem decisões mais assertivas e eficientes.</p>
         </div>
 
-        <div class="card">
-            <h2>Use o ChatGPT agora</h2>
-            <p>Comece a interagir com o ChatGPT e explore seu potencial em diversas áreas do conhecimento.</p>
-            <a href="#" class="cta-button">Comece Agora</a>
+        <div class="section">
+            <h2>Soluções Tecnológicas Inovadoras</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Monitoramento+de+Campos" alt="Monitoramento de Campos">
+                    <h3>Monitoramento de Campos</h3>
+                    <p>Drones e sensores de campo para coletar dados em tempo real, proporcionando um controle mais preciso das culturas e condições do solo.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Previs%C3%A3o+Clim%C3%A1tica" alt="Previsão Climática">
+                    <h3>Previsão Climática</h3>
+                    <p>Ferramentas de previsão climática ajudam os produtores a planejar melhor as colheitas e a se preparar para condições adversas.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Agricultura+de+Precis%C3%A3o" alt="Agricultura de Precisão">
+                    <h3>Agricultura de Precisão</h3>
+                    <p>Uso de tecnologias para monitoramento detalhado de cada hectare, garantindo o uso eficiente de insumos e aumentando a produção sustentável.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 ChatGPT | Todos os direitos reservados</p>
+        <p>&copy; 2025 Tecnologia no Campo | Todos os direitos reservados</p>
     </footer>
 
 </body>
