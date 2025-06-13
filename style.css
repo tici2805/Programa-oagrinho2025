@@ -1,4 +1,4 @@
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,41 +29,86 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Seção da cidade e campo */
-section {
+/* Estilos para a seção do Campo */
+section#campo {
     padding: 50px 20px;
-    text-align: center;
+    background-color: #e8f5e9;
 }
 
-section h2 {
+section#campo h2 {
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-section p {
+section#campo p {
     font-size: 1.2rem;
     color: #7f8c8d;
     margin-bottom: 30px;
 }
 
-.content {
+section#campo .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.image-container {
+section#campo .image-container {
     width: 45%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.image-container img {
+section#campo .image-container img {
     width: 100%;
     border-radius: 10px;
+}
+
+section#campo .text-container {
+    width: 45%;
+}
+
+/* Estilos para a seção da Cidade */
+section#cidade {
+    padding: 50px 20px;
+    background-color: #f3f4f6;
+}
+
+section#cidade h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+section#cidade p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+section#cidade .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap-reverse;
+}
+
+section#cidade .image-container {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section#cidade .image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section#cidade .text-container {
+    width: 45%;
 }
 
 /* Rodapé */
@@ -96,12 +141,18 @@ footer a:hover {
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    .content {
+    section#campo .content,
+    section#cidade .content {
         flex-direction: column;
         gap: 20px;
     }
 
-    .image-container {
+    section#campo .image-container,
+    section#cidade .image-container {
         width: 80%;
     }
 }
+
+
+
+
