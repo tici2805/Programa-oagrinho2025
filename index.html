@@ -3,171 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festa do Agrinho - Celebrando o Campo e a Cidade</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cidade e Campo</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>Festa do Agrinho</h1>
-            <p>Uma grande festa que celebra o campo e a cidade, com muita alegria, bandeirinhas e o querido Agrinho!</p>
+            <h1>Cidade e Campo</h1>
+            <p>Conectando a vida urbana com a serenidade do campo.</p>
         </div>
     </header>
 
-    <section id="bandeirinhas">
+    <section>
         <div class="container">
-            <h2>Decoração Colorida com Bandeirinhas</h2>
-            <div class="decoracao">
-                <div class="bandeirinha"></div>
-                <div class="bandeirinha"></div>
-                <div class="bandeirinha"></div>
-                <div class="bandeirinha"></div>
-                <div class="bandeirinha"></div>
-            </div>
-            <p>As bandeirinhas coloridas deixam o ambiente ainda mais alegre, representando a união do campo e da cidade, em um clima de festa.</p>
-        </div>
-    </section>
-
-    <section id="agrinho">
-        <div class="container">
-            <h2>O Boneco do Agrinho</h2>
-            <div class="agrinho">
-                <img src="agrinho.png" alt="Boneco do Agrinho" class="agrinho-img">
-                <p>O querido Agrinho está presente na festa, com suas roupas coloridas, mostrando a força e a união do campo com a cidade!</p>
+            <h2>A Beleza da Cidade e do Campo</h2>
+            <p>Explore a harmonia entre a vida moderna e a tranquilidade do campo.</p>
+            <div class="content">
+                <!-- Imagem da cidade -->
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/500x300/3498db/ffffff?text=Cidade" alt="Cidade">
+                    <p>Cidade: A energia da vida urbana!</p>
+                </div>
+                <!-- Imagem do campo -->
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/500x300/2ecc71/ffffff?text=Campo" alt="Campo">
+                    <p>Campo: A paz e serenidade da natureza!</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Festa do Agrinho. Todos os direitos reservados.</p>
+            <p>Conecte-se conosco no Instagram: <a href="https://www.instagram.com/tici_2805/" target="_blank">@tici_2805</a></p>
         </div>
     </footer>
 
 </body>
 </html>
-Arquivo CSS para a festa do Agrinho (em styles.css):
-Agora, vamos criar o estilo para tornar a festa bem colorida, com bandeirinhas e um visual alegre:
-
-css
-Copiar
-Editar
-/* Resetando margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo para o corpo da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-}
-
-/* Cabeçalho da página */
-header {
-    background-color: #ff9800;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Estilo para as bandeirinhas */
-#bandeirinhas {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.decoracao {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.bandeirinha {
-    width: 60px;
-    height: 60px;
-    background-color: #f44336;
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    animation: flutuar 3s infinite ease-in-out;
-}
-
-.bandeirinha:nth-child(odd) {
-    background-color: #4caf50;
-}
-
-@keyframes flutuar {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-/* Estilo para a seção do boneco Agrinho */
-#agrinho {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 5px solid #ff9800;
-}
-
-.agrinho img {
-    width: 200px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.agrinho p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Estilo do rodapé */
-footer {
-    background-color: #ff9800;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Responsividade para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    .bandeirinha {
-        width: 40px;
-        height: 40px;
-    }
-    .agrinho img {
-        width: 150px;
-    }
-    footer {
-        font-size: 0.9rem;
-    }
-}
