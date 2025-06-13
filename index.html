@@ -1,145 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia no Campo</title>
+    <title>ChatGPT - Página Colorida</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Resetando alguns estilos padrão */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
         header {
-            background: linear-gradient(to bottom, #f4f4f4(0, 38, 28, 0.8), rgba(0, 70, 50, 0.8)), url('https://www.example.com/imagem-de-fundo.jpg') no-repeat center center;
-            background-size: cover;
+            background-color: #4f8a8b;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 80px 20px;
-            position: relative;
         }
+
         header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            font-size: 2.5em;
         }
-        header p {
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-top: 10px;
-            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-        }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #264653;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
         }
+
         nav a {
             color: white;
-            text-decoration: none;
-            padding: 12px 30px;
             margin: 0 15px;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            font-weight: 500;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            font-size: 1.1em;
         }
+
         nav a:hover {
-            background-color: #e9c46a;
-            color: #264653;
+            text-decoration: underline;
         }
-        .container {
-            padding: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
+
+        .main-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
             background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            width: 60%;
+            max-width: 1000px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
         }
-        .section {
-            margin-bottom: 40px;
+
+        .card h2 {
+            color: #4f8a8b;
         }
-        h2 {
-            color: #264653;
-            font-size: 1.8rem;
+
+        .card p {
+            color: #666;
+            font-size: 1.1em;
         }
-        p {
-            color: #555;
-            font-size: 1.1rem;
+
+        .cta-button {
+            background-color: #4f8a8b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
         }
-        ul {
-            color: #555;
-            font-size: 1.1rem;
-            padding-left: 20px;
+
+        .cta-button:hover {
+            background-color: #3a6766;
         }
+
         footer {
-            background-color: #2a9d8f;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            font-size: 0.9rem;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Tecnologia no Campo</h1>
-        <p>Transformando a agricultura com inovação, eficiência e sustentabilidade.</p>
-        <p>Conectando o campo com o futuro através da tecnologia.</p>
+        <h1>Bem-vindo ao ChatGPT</h1>
     </header>
 
     <nav>
-        <a href="#introducao">Introdução</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#inovacoes">Inovações</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Preços</a>
+        <a href="#">Contato</a>
     </nav>
 
-    <div class="container">
-        <section id="introducao" class="section">
-            <h2>O que é a Tecnologia no Campo?</h2>
-            <p>A tecnologia no campo envolve o uso de ferramentas e sistemas inovadores para melhorar a produção agrícola, aumentar a eficiência e promover práticas sustentáveis. Desde o uso de drones até sistemas de monitoramento em tempo real, a tecnologia tem revolucionado a maneira como os agricultores trabalham e produzem alimentos.</p>
-        </section>
+    <div class="main-content">
+        <div class="card">
+            <h2>Descubra o Poder do ChatGPT</h2>
+            <p>O ChatGPT é um modelo de linguagem avançado desenvolvido pela OpenAI. Ele pode ajudar em diversas tarefas, desde redação até análise de dados.</p>
+            <a href="#" class="cta-button">Saiba Mais</a>
+        </div>
 
-        <section id="beneficios" class="section">
-            <h2>Benefícios da Tecnologia no Campo</h2>
-            <ul>
-                <li><strong>Aumento da produtividade:</strong> Máquinas mais precisas e inteligentes ajudam a melhorar a produção.</li>
-                <li><strong>Redução de custos:</strong> Uso mais eficiente de insumos como água, sementes e fertilizantes.</li>
-                <li><strong>Sustentabilidade:</strong> Tecnologias como a agricultura de precisão ajudam a reduzir o impacto ambiental.</li>
-                <li><strong>Monitoramento em tempo real:</strong> Sensores e drones permitem monitorar lavouras em tempo real, otimizando as decisões.</li>
-            </ul>
-        </section>
-
-        <section id="inovacoes" class="section">
-            <h2>Inovações Tecnológicas no Campo</h2>
-            <p>Algumas das principais inovações que estão transformando o setor agrícola incluem:</p>
-            <ul>
-                <li><strong>Tratores autônomos:</strong> Máquinas que operam sem a necessidade de um motorista, otimizando a operação e reduzindo o uso de combustível.</li>
-                <li><strong>Sensores de solo:</strong> Sensores que medem a umidade, a temperatura e a composição do solo, permitindo um controle mais preciso sobre o cultivo.</li>
-                <li><strong>Drones:</strong> Utilizados para monitorar grandes áreas de cultivo, capturando imagens aéreas e dados para análise detalhada.</li>
-                <li><strong>Internet das Coisas (IoT):</strong> Sensores conectados que monitoram as condições da fazenda, como temperatura e umidade, e enviam informações para os agricultores em tempo real.</li>
-            </ul>
-        </section>
-
-        <section id="sustentabilidade" class="section">
-            <h2>A Tecnologia e a Sustentabilidade no Campo</h2>
-            <p>Com o crescente foco na preservação ambiental, as tecnologias no campo têm se alinhado cada vez mais com práticas sustentáveis. O uso de tecnologias como irrigação inteligente, controle biológico de pragas e agricultura de precisão permitem aos agricultores melhorar a produção enquanto reduzem os impactos negativos no meio ambiente.</p>
-        </section>
+        <div class="card">
+            <h2>Use o ChatGPT agora</h2>
+            <p>Comece a interagir com o ChatGPT e explore seu potencial em diversas áreas do conhecimento.</p>
+            <a href="#" class="cta-button">Comece Agora</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Tecnologia no Campo. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ChatGPT | Todos os direitos reservados</p>
     </footer>
 
 </body>
