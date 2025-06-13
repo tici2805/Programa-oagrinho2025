@@ -1,260 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia no Campo</title>
     <style>
-        /* Resetando alguns estilos padrão */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
-        /* Estilo do Cabeçalho */
         header {
-            background-color: #ff6347; /* Tom vibrante de vermelho */
+            background-color: #2c3e50;
             color: white;
-            padding: 40px;
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 5px solid #c73827;
         }
-
-        header h1 {
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        header p {
-            font-size: 1.3em;
-            font-weight: 300;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Estilo do Menu de Navegação */
         nav {
-            background-color: #3e8e41; /* Verde vibrante */
-            padding: 15px;
+            background-color: #34495e;
+            padding: 10px;
             text-align: center;
         }
-
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-weight: bold;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
-        /* Seção Hero (Imagem com efeito de sobreposição) */
-        .hero {
-            background-image: url('https://via.placeholder.com/1920x800/ff6347/ffffff?text=Tecnologia+no+Campo'); 
-            background-size: cover;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero h2 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            font-weight: 300;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
-        }
-
-        /* Seções de Conteúdo */
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 2.8em;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1.2em;
-            color: #555;
-            line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        /* Seção de Soluções Tecnológicas */
-        .solutions {
-            background-color: #ff9800; /* Laranja vibrante */
-        }
-
-        .solutions h2 {
-            color: #333;
-        }
-
-        .solutions p {
-            color: #444;
-        }
-
-        /* Seção de Benefícios */
-        .benefits {
-            background-color: #9c27b0; /* Roxo vibrante */
-            color: white;
-        }
-
-        /* Cards de Soluções Tecnológicas */
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        section {
             padding: 20px;
-            width: 300px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-            margin-bottom: 20px;
         }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .card h3 {
-            margin: 15px 0;
-            font-size: 1.8em;
-            color: #4c9a2a;
-        }
-
-        .card p {
-            font-size: 1.1em;
-            color: #666;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card:hover img {
-            transform: scale(1.1);
-        }
-
-        .cta-button {
-            background-color: #ff6347; /* Cor vibrante de botão */
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        .cta-button:hover {
-            background-color: #c73827; /* Cor vibrante ao passar o mouse */
-        }
-
-        /* Rodapé */
         footer {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-
-        footer p {
-            font-size: 1.1em;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
-
+        h1, h2 {
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Tecnologia no Campo</h1>
-        <p>Transformando o agronegócio com inovação, sustentabilidade e eficiência.</p>
+        <div class="container">
+            <h1>Tecnologia no Campo</h1>
+            <p>Inovações tecnológicas que estão transformando a agricultura e o mundo rural</p>
+        </div>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Soluções</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
+        <div class="container">
+            <a href="#smart-farming">Agricultura Inteligente</a>
+            <a href="#drones">Drones na Agricultura</a>
+            <a href="#sensores">Sensores e IoT</a>
+            <a href="#futuro">O Futuro do Campo</a>
+        </div>
     </nav>
 
-    <div class="hero">
-        <h2>Inovação e Sustentabilidade no Agronegócio</h2>
-        <p>A tecnologia está moldando o futuro da agricultura, desde a otimização de processos até a promoção de práticas mais verdes e sustentáveis.</p>
-    </div>
-
-    <div class="main-content">
-        <!-- Seção de Impacto das Tecnologias -->
-        <div class="section">
-            <h2>Impacto das Tecnologias no Campo</h2>
-            <p>As inovações tecnológicas estão cada vez mais presentes no campo, proporcionando uma agricultura de precisão que aumenta a produtividade, reduz desperdícios e contribui para a sustentabilidade. Drones, sensores IoT, e sistemas inteligentes são apenas algumas das ferramentas que estão transformando a produção rural.</p>
+    <section id="smart-farming">
+        <div class="container">
+            <h2>Agricultura Inteligente</h2>
+            <p>A agricultura inteligente está utilizando tecnologias como inteligência artificial, aprendizado de máquina e big data para otimizar as colheitas, reduzir custos e melhorar a sustentabilidade das práticas agrícolas. Saiba mais sobre este tema em <a href="https://www.agriculture.com" target="_blank">Agriculture.com</a>.</p>
         </div>
+    </section>
 
-        <!-- Seção de Soluções Tecnológicas -->
-        <div class="solutions section">
-            <h2>Soluções Tecnológicas Inovadoras</h2>
-            <p>Com o uso de tecnologias avançadas, como monitoramento de campos e previsão climática, o agronegócio pode se tornar mais eficiente, sustentável e preparado para os desafios do futuro.</p>
-
-            <div class="cards-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Monitoramento+de+Campos" alt="Monitoramento de Campos">
-                    <h3>Monitoramento Inteligente de Campos</h3>
-                    <p>Drones e sensores IoT permitem o monitoramento remoto em tempo real, coletando dados precisos sobre o clima, solo e saúde das plantas.</p>
-                    <a href="#" class="cta-button">Saiba Mais</a>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Previs%C3%A7%C3%A3o+Clim%C3%A1tica" alt="Previsão Climática">
-                    <h3>Previsão Climática Avançada</h3>
-                    <p>Sistemas de previsão climática ajudam os agricultores a planejar suas atividades de forma mais eficiente, minimizando os impactos de fenômenos climáticos adversos.</p>
-                    <a href="#" class="cta-button">Saiba Mais</a>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Agricultura+de+Precis%C3%A3o" alt="Agricultura de Precisão">
-                    <h3>Agricultura de Precisão</h3>
-                    <p>Tecnologias como GPS e sensores de solo possibilitam um uso mais eficiente de insumos, como fertilizantes e pesticidas, resultando em menores custos e menor impacto ambiental.</p>
-                    <a href="#" class="cta-button">Saiba Mais</a>
-                </div>
-            </div>
+    <section id="drones">
+        <div class="container">
+            <h2>Drones na Agricultura</h2>
+            <p>Os drones estão revolucionando a forma como os agricultores monitoram e gerenciam suas lavouras. Com câmeras de alta resolução e sensores, é possível realizar monitoramento em tempo real e coletar dados precisos sobre o estado das plantações. Descubra mais sobre drones em <a href="https://www.droneagriculture.com" target="_blank">Drone Agriculture</a>.</p>
         </div>
+    </section>
 
-    </div>
+    <section id="sensores">
+        <div class="container">
+            <h2>Sensores e IoT</h2>
+            <p>A Internet das Coisas (IoT) e os sensores estão sendo usados para monitorar o solo, o clima e as condições das culturas, fornecendo informações em tempo real que ajudam na tomada de decisões. Conheça mais sobre o impacto desses sensores na agricultura em <a href="https://www.iotagriculture.com" target="_blank">IoT Agriculture</a>.</p>
+        </div>
+    </section>
+
+    <section id="futuro">
+        <div class="container">
+            <h2>O Futuro do Campo</h2>
+            <p>O futuro da agricultura está interligado com inovações como a agricultura vertical, robôs agrícolas, e tecnologias de rastreamento de alimentos. Veja como essas inovações estão moldando o futuro da produção agrícola em <a href="https://www.futureofagriculture.com" target="_blank">Future of Agriculture</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tecnologia no Campo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

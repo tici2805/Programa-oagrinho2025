@@ -1,51 +1,121 @@
-body{
-    margin: 0;
+body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
-.topo{
-    background-color: #111;
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #2c3e50;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
-.topo h1{
-    font-size: 28px;
-    line-height: 1.2;
+
+/* Estilo para o título principal */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-.icone{
-    width: 80px;
+
+/* Estilo para a descrição */
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
 }
-.conteudo{
-    background-color: #c0c0c0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+/* Estilo de navegação */
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
 }
-.imagem-box{
-    display: flex;
-    gap: 20px;
+
+/* Estilo para os links de navegação */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
-.imagem-box img {
-    width: 150px;
-    height: auto;
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para as seções */
+section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
     border-radius: 8px;
 }
-.terra-box{
-   display: flex;
-   align-items: center;
-   justify-self: center;
-   width: 100%;
-   margin-top: 20px;
+
+/* Estilo para os títulos das seções */
+section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
-.terra-box img {
-    width: 200px;
+
+/* Estilo para o conteúdo das seções */
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #7f8c8d;
 }
-.rodape{
-    background-color: #444;
-    height: 100px;
+
+/* Estilo dos links nas seções */
+section a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
 }
- 
+
+/* Efeito ao passar o mouse sobre os links nas seções */
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Contêiner para limitar a largura */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
