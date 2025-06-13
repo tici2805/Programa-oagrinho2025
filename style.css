@@ -15,7 +15,7 @@ body {
 /* Cabeçalho com tema de cidade e campo */
 header {
     background: linear-gradient(135deg, #4caf50, #2196f3);
-    color: rgb(42, 10, 201);
+    color: rgb(10, 201, 150);
     text-align: center;
     padding: 40px 20px;
 }
