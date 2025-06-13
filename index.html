@@ -19,8 +19,9 @@
             line-height: 1.6;
         }
 
+        /* Estilo do Cabeçalho */
         header {
-            background-color: #4c9a2a; /* Verde do campo */
+            background-color: #4c9a2a; /* Verde claro */
             color: white;
             padding: 40px;
             text-align: center;
@@ -40,6 +41,7 @@
             margin: 0 auto;
         }
 
+        /* Estilo do Menu de Navegação */
         nav {
             background-color: #2c6b1f; /* Verde escuro */
             padding: 15px;
@@ -57,6 +59,7 @@
             text-decoration: underline;
         }
 
+        /* Seção Hero (Imagem com efeito de sobreposição) */
         .hero {
             background-image: url('https://via.placeholder.com/1920x800/4c9a2a/ffffff?text=Tecnologia+no+Campo');
             background-size: cover;
@@ -67,7 +70,7 @@
         }
 
         .hero h2 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 20px;
         }
 
@@ -88,30 +91,47 @@
             background-color: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
         }
 
-        .main-content {
-            padding: 30px;
-            text-align: center;
-        }
-
+        /* Seções de Conteúdo */
         .section {
+            padding: 60px 20px;
+            text-align: center;
             margin-bottom: 40px;
         }
 
         .section h2 {
-            font-size: 2.5em;
-            color: #4c9a2a;
-            margin-bottom: 20px;
+            font-size: 2.8em;
             font-weight: 600;
+            margin-bottom: 20px;
         }
 
         .section p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #555;
             line-height: 1.8;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
+        /* Seção de Soluções Tecnológicas */
+        .solutions {
+            background-color: #f7c32e; /* Amarelo para energia e inovação */
+        }
+
+        .solutions h2 {
+            color: #333;
+        }
+
+        .solutions p {
+            color: #444;
+        }
+
+        /* Seção de Benefícios */
+        .benefits {
+            background-color: #2b83c8; /* Azul para confiança e tecnologia */
+            color: white;
+        }
+
+        /* Cards de Soluções Tecnológicas */
         .cards-container {
             display: flex;
             justify-content: center;
@@ -127,6 +147,7 @@
             width: 300px;
             text-align: center;
             transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
         }
 
         .card img {
@@ -169,12 +190,12 @@
             background-color: #3c7d1c;
         }
 
+        /* Rodapé */
         footer {
-            background-color: #2c6b1f;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
         }
 
         footer p {
@@ -203,13 +224,17 @@
     </div>
 
     <div class="main-content">
+        <!-- Seção de Impacto das Tecnologias -->
         <div class="section">
             <h2>Impacto das Tecnologias no Campo</h2>
             <p>As inovações tecnológicas estão cada vez mais presentes no campo, proporcionando uma agricultura de precisão que aumenta a produtividade, reduz desperdícios e contribui para a sustentabilidade. Drones, sensores IoT, e sistemas inteligentes são apenas algumas das ferramentas que estão transformando a produção rural.</p>
         </div>
 
-        <div class="section">
+        <!-- Seção de Soluções Tecnológicas -->
+        <div class="solutions section">
             <h2>Soluções Tecnológicas Inovadoras</h2>
+            <p>Com o uso de tecnologias avançadas, como monitoramento de campos e previsão climática, o agronegócio pode se tornar mais eficiente, sustentável e preparado para os desafios do futuro.</p>
+
             <div class="cards-container">
                 <div class="card">
                     <img src="https://via.placeholder.com/300x200/4c9a2a/ffffff?text=Monitoramento+de+Campos" alt="Monitoramento de Campos">
@@ -232,15 +257,4 @@
             </div>
         </div>
 
-        <div class="section">
-            <h2>Transformando a Agricultura para um Futuro Sustentável</h2>
-            <p>A adoção de tecnologias no campo vai além da melhoria da produção. Ela também contribui para um ambiente mais saudável e uma maior eficiência no uso de recursos naturais, como água e energia. O futuro da agricultura está nas mãos da tecnologia.</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Tecnologia no Campo | Todos os direitos reservados</p>
-    </footer>
-
-</body>
-</html>
+       
