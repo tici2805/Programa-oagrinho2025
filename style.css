@@ -73,7 +73,7 @@ section#campo .text-container {
 /* Estilos para a seção da Cidade */
 section#cidade {
     padding: 50px 20px;
-    background-color: #f3f4f6;
+    background-color: #91cff6;
 }
 
 section#cidade h2 {
@@ -114,7 +114,7 @@ section#cidade .text-container {
 /* Rodapé */
 footer {
     background-color: #34495e;
-    color: white;
+    color: rgb(113, 207, 217);
     text-align: center;
     padding: 20px 0;
 }
